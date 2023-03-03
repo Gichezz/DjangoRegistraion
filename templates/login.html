@@ -10,18 +10,18 @@
             <div class="row">
                 <div class="col-3"></div>
                 <div class="col-6">
-                    <h1>Register here</h1>
+                    <h1>Login here</h1>
                     <form action="" method="post">
                         {% csrf_token %}
                         <fieldset>
-                            <legend class="border-bottom mb-4">Join today</legend>
+                            <legend class="border-bottom mb-4">Login now</legend>
                             {{ form|crispy }}
                         </fieldset>
                         <div class="form-group">
-                            <input class="btn btn-info" type="submit" name="btn-reg" value="Register">
+                            <input class="btn btn-info" type="submit" name="btn-login" value="Login">
                         </div>
                     </form>
-                    <a href="{% url 'user-login' %}">Sign in instead!</a>
+                    <a href="{% url 'users-registration' %}">Sign up instead!</a>
                 </div>
                 <div class="col-3"></div>
             </div>
